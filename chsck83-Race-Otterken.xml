@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Otterken</name>
+		<update version="1.0">
+			<file name="chsck83-Race-Otterken.xml" url="none"/>
+		</update>
+	</info>
+
+	<element name="Otterken" type="Race" source="Dave's Brain" id="ID_RACE_OTTERKEN">
+		<description>
+			<p class="flavor">Otterken are otter-people. Their society has a very clear caste style system based on subrace and size. The bigger and stronger you are, the better you are. In their free time, all Otterken do enjoy swimming and floating in water, but many of them also enjoy more terrestrial events, like gladiatorial matches.</p>
+			<h4>OTTERKEN TRAITS</h4>
+			<p>Your Otterken character has a variety of natural abilities.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> You may increasy any two starting scores by 1 each.</p>
+			<p class="indent"><strong><em>Size.</em></strong> Otterken range from under 3 to over 6 feet tall. Height and size vary by sub-race.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet.</p>
+			<p class="indent"><strong><em>Darkvision.</em></strong> Accustomed to night time and deep water, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray.</p>
+			<p class="indent"><strong><em>Strong Lungs.</em></strong> You can advantage on Constitution checks and saving throws that require holding your breath and similar lung use.</p>
+			<p class="indent"><strong><em>Cute Little Human Things.</em></strong> You gain proficiency with two tool sets of your choice.</p>
+			<p class="indent"><strong><em>Subrace.</em></strong> Otterken seem to have evolved from two differen species, sea otters and river otters. The physical characteristics of these two otters are different enough to have carried over into their caste and society. </p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON"  />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_STRONG_LUNGS" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_CUTE_LITTLE_HUMAN_THINGS" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_OTTERKEN_SUBRACE" />
+		</rules>
+	</element>
+	<element name="Strong Lungs" type="Racial Trait" source="Dave's Brain" id="ID_RACIAL_TRAIT_STRONG_LUNGS">
+		<description>
+			<p>You gain advantage on Con checks and saves that require holding your breath or similar lung use.</p>
+		</description>
+		<sheet>
+			<description>You gain advantage on Con checks and saves that require holding your breath or similar lung use..</description>
+		</sheet>
+	</element>
+	<element name="Cute Little Human Things" type="Racial Trait" source="Dave's Brain" id="ID_RACIAL_TRAIT_CUTE_LITTLE_HUMAN_THINGS">
+		<description>
+			<p>You gain proficiency with two tool sets of your choice.</p>
+		</description>
+		<sheet display="false">
+			<description>You gain proficiency with two tool sets of your choice.</description>
+		</sheet>
+        <rules>
+            <select type="Proficiency" name="Tool Proficiency, Cute Little Human Things" number="2" supports="Tool" />
+        </rules>
+	</element>
+	<element name="Otterken Subrace" type="Racial Trait" source="Dave's Brain" id="ID_RACIAL_TRAIT_OTTERKEN_SUBRACE">
+		<description>
+			<p>Choose one of three subraces.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Sub Race" name="Otterken Subrace" supports="Otterken" />
+		</rules>
+	</element>
+
+	<element name="Seaken" type="Sub Race" source="Dave's Brain" id="ID_SUB_RACE_SEAKEN">
+		<supports>Otterken</supports>
+		<description>
+			<p>These otterken developed from sea otters. They arre larger and tend to be fairly angry and mean spirited. They tend to be soldiers and leaders.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Strength or Constitution score increases by 1.</p>
+			<p class="indent"><strong><em>Polearm Training.</em></strong> You have proficiency with all polearms, such as glaives, halberts, lances, pikes, and spears.</p>
+			<p class="indent"><strong><em>Size.</em></strong> Sea Otterken are usually between 5 and 6.5 feet tall. They are Medium creatures.</p>
+			<p class="indent"><strong><em>Furry Pocket.</em></strong> You have an extra-dimensional space that can store one weapon, one tool kit, or up to 4 potions.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+            <grant type="Size" id="ID_SIZE_MEDIUM" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_POLEARM_TRAINING" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_FURRY_POCKET" />
+		</rules>
+	</element> 	
+	<element name="Polearm Training" type="Racial Trait" source="Dave's Brain" id="ID_RACIAL_TRAIT_POLEARM_TRAINING">
+		<description>
+			<p>You have proficiency with all polearms, such as glaives, halberts, lances, pikes, and spears.</p>
+		</description>
+		<sheet display="false">
+			<description>You have proficiency with all polearms, such as glaives, halberts, lances, pikes, and spears.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SPEAR" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_GLAIVE" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_HALBERD" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_LANCE" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_PIKE" />
+		</rules>
+	</element>
+	<element name="Furry Pocket" type="Racial Trait" source="Dave's Brain" id="ID_RACIAL_TRAIT_FURRY_POCKET">
+		<description>
+			<p>You have an extra-dimensional space that can store one weapon, one tool kit, or up to 4 potions.</p>
+		</description>
+		<sheet>
+			<description>You have an extra-dimensional space that can store one weapon, one tool kit, or up to 4 potions.</description>
+		</sheet>
+	</element>
+
+	<element name="Riverken" type="Sub Race" source="Dave's Brain" id="ID_SUB_RACE_RIVERKEN">
+		<supports>Otterken</supports>
+		<description>
+			<p>These otterken developed from river otters. They are smaller and often more jovial. The majority of them are timid around Seaken. They tend to be the working-class.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Dexterity or Charisma score increases by 1.</p>
+			<p class="indent"><strong><em>Racial Spell.</em></strong> All Riverken can cast Water Breathing as a ritual Spell.</p>
+			<p class="indent"><strong><em>Size.</em></strong> River Otterken are usually between 2.5 and 3.5 feet tall. They are Small creatures.</p>
+			<p class="indent"><strong><em>Extra Language.</em></strong> You can speak, read, and write one extra language of your choice.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Size" id="ID_SIZE_SMALL" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_EXTRA_LANGUAGE" />
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_RACIAL_SPELL"/>
+		</rules>
+	</element>
+    <element name="Extra Language" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_EXTRA_LANGUAGE">
+		<description>
+			<p>You can speak, read, and write one extra language of your choice.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Language" name="Language (Riverken)" supports="Standard||Exotic" />
+		</rules>
+	</element>
+    <element name="Racial Spell" type="Racial Trait" source="Dave's Brain" id="ID_RACIAL_TRAIT_RACIAL_SPELL">
+        <description>
+            <p>River Otterken can cast Water Breathing as a ritual spell.</p>
+        </description>
+        <sheet>
+            <description>River Otterken can cast Water Breathing as a ritual spell. </description>
+        </sheet>
+    </element>
+
+
+
+	<element name="Halfken" type="Sub Race" source="Dave's Brain" id="ID_SUB_RACE_HALFKEN">
+		<supports>Otterken</supports>
+		<description>
+			<p>These otterken are rare and are the offspring of a seaken and a riverken. They are reviled by the seaken and distrusted by the riverken, at least those within the Otterken Empire. While their parents will raise them to adulthood, once they are adults, the are usually ejected from their homes. They often become adventurers.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Any ability score of your choice increases by 1.</p>
+			<p class="indent"><strong><em>Size.</em></strong> Halfken range between 2.5 and 6.5 feet tall. They can be Small or Medium.</p>
+			<p class="indent"><strong><em>Reviled.</em></strong> You are generally reviled by the otterken of the Otterken Empire. They start off unfriendly towards you.</p>
+			<p class="indent"><strong><em>Variable Genetics.</em></strong> Your genes depend on your parents. Please choose two of the following Racial Abilities: Furry Pocket, Racial Spell, Extra Language, Enhanced Magic, Forced Versatility.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Racial Trait" name="Size" supports="ID_SIZE_MEDIUM|ID_SIZE_SMALL" />
+			<select type="Racial Trait" supports="ID_RACIAL_TRAIT_ENHANCED_MAGIC|ID_RACIAL_TRAIT_FORCED_VERSATILITY|ID_RACIAL_TRAIT_FURRY_POCKET|ID_RACIAL_TRAIT_RACIAL_SPELL|ID_RACIAL_TRAIT_EXTRA_LANGUAGE" />
+            <select type="Racial Trait" supports="ID_RACIAL_TRAIT_ENHANCED_MAGIC|ID_RACIAL_TRAIT_FORCED_VERSATILITY|ID_RACIAL_TRAIT_FURRY_POCKET|ID_RACIAL_TRAIT_RACIAL_SPELL|ID_RACIAL_TRAIT_EXTRA_LANGUAGE" />
+		</rules>
+	</element>
+	<element name="Enhanced Magic" type="Racial Trait" source="Dave's Brain" id="ID_RACIAL_TRAIT_ENHANCED_MAGIC">
+		<description>
+			<p>Your odd genetic makeup somehow strengthens your magic. You gain +1 to your spell DC's and 1 extra spell slot of your choice of level. You can change which level this slot is assigned during a long rest.</p>
+		</description>
+		<sheet>
+			<description>Your odd genetic makeup somehow strengthens your magic. You gain +1 to your spell DC's and 1 extra spell slot of your choice of level. You can change which level this slot is assigned during a long rest.</description>
+		</sheet>
+		<rules>
+			<stat name="warlock:spellcasting:dc" value="1" bonus="Enhanced Magic" />
+            <stat name="wizard:spellcasting:dc" value="1" bonus="Enhanced Magic" />
+            <stat name="bard:spellcasting:dc" value="1" bonus="Enhanced Magic" />
+            <stat name="cleric:spellcasting:dc" value="1" bonus="Enhanced Magic" />
+            <stat name="druid:spellcasting:dc" value="1" bonus="Enhanced Magic" />
+		</rules>
+	</element>
+    <element name="Forced Versatility" type="Racial Trait" source="Dave's Brain" id="ID_RACIAL_TRAIT_FORCED_VERSATILITY">
+        <description>
+            <p>You gain proficiency in two skills</p>
+        </description>
+        <sheet>
+            <description>You gain proficiency in two skills</description>
+        </sheet>
+        <rules>
+            <select type="Proficiency" name="Skill Proficiency, Forced Versatility" supports="Skill" number="2" />
+        </rules>
+    </element>
+</elements>
