@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+		<update version="1.0">
+			<file name="chsck83-aurora.index" url="" />
+		</update>
+	</info>
+	<files>
+		<file name="chsck83-Race-Otterken.xml" url="https://github.com/chsck83/chsck83-Aurora/blob/f3d78aaaa2b36a140d5172e3e441b8f7d246ee75/chsck83-Race-Otterken.xml" />
+		<file name="chsck83-items-custom.xml" url="https://github.com/chsck83/chsck83-Aurora/blob/f3d78aaaa2b36a140d5172e3e441b8f7d246ee75/chsck83-items-custom.xml" />		
+	</files>
+</index
