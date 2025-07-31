@@ -22,6 +22,7 @@
 		</description>
 		<sheet display="false" />
 		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Otterken)" supports="Custom Ability Score Improvement Option" />
 			<stat name="innate speed" value="30" bonus="base" />
 			<grant type="Vision" id="ID_VISION_DARKVISION" />
 			<grant type="Language" id="ID_LANGUAGE_COMMON"  />
@@ -146,6 +147,7 @@
 		</description>
 		<sheet display="false" />
 		<rules>
+			<select type="Racial Trait" name="Size (Halfken)" supports="ID_INTERNAL_RACIAL_TRAIT_SMALL|ID_INTERNAL_RACIAL_TRAIT_MEDIUM" />
 			<select type="Racial Trait" name="Size" supports="ID_SIZE_MEDIUM||ID_SIZE_SMALL" />
 			<select type="Racial Trait" supports="ID_RACIAL_TRAIT_ENHANCED_MAGIC|ID_RACIAL_TRAIT_FORCED_VERSATILITY|ID_RACIAL_TRAIT_FURRY_POCKET|ID_RACIAL_TRAIT_RACIAL_SPELL|ID_RACIAL_TRAIT_EXTRA_LANGUAGE" />
             <select type="Racial Trait" supports="ID_RACIAL_TRAIT_ENHANCED_MAGIC|ID_RACIAL_TRAIT_FORCED_VERSATILITY|ID_RACIAL_TRAIT_FURRY_POCKET|ID_RACIAL_TRAIT_RACIAL_SPELL|ID_RACIAL_TRAIT_EXTRA_LANGUAGE" />
