@@ -146,7 +146,7 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<select type="Racial Trait" name="Size" supports="ID_SIZE_MEDIUM|ID_SIZE_SMALL" />
+			<select type="Racial Trait" name="Size" supports="ID_SIZE_MEDIUM||ID_SIZE_SMALL" />
 			<select type="Racial Trait" supports="ID_RACIAL_TRAIT_ENHANCED_MAGIC|ID_RACIAL_TRAIT_FORCED_VERSATILITY|ID_RACIAL_TRAIT_FURRY_POCKET|ID_RACIAL_TRAIT_RACIAL_SPELL|ID_RACIAL_TRAIT_EXTRA_LANGUAGE" />
             <select type="Racial Trait" supports="ID_RACIAL_TRAIT_ENHANCED_MAGIC|ID_RACIAL_TRAIT_FORCED_VERSATILITY|ID_RACIAL_TRAIT_FURRY_POCKET|ID_RACIAL_TRAIT_RACIAL_SPELL|ID_RACIAL_TRAIT_EXTRA_LANGUAGE" />
 		</rules>
