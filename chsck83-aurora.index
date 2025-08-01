@@ -2,11 +2,11 @@
 <index>
 	<info>
 		<update version="1.0">
-			<file name="chsck83-aurora.index" url="https://github.com/chsck83/chsck83-Aurora/blob/main/chsck83-aurora.index" />
+			<file name="chsck83-aurora.index" url="https://raw.githubusercontent.com/chsck83/chsck83-Aurora/refs/heads/main/chsck83-aurora.index" />
 		</update>
 	</info>
 	<files>
-		<file name="chsck83-Race-Otterken.xml" url="https://github.com/chsck83/chsck83-Aurora/blob/main/chsck83-Aurora/chsck83-Race-Otterken.xml" />
-		<file name="chsck83-items-custom.xml" url="https://github.com/chsck83/chsck83-Aurora/blob/main/chsck83-Aurora/chsck83-items-custom.xml" />		
+		<file name="chsck83-Race-Otterken.xml" url="https://raw.githubusercontent.com/chsck83/chsck83-Aurora/refs/heads/main/chsck83-Aurora/chsck83-Race-Otterken.xml" />
+		<file name="chsck83-items-custom.xml" url="https://raw.githubusercontent.com/chsck83/chsck83-Aurora/refs/heads/main/chsck83-Aurora/chsck83-items-custom.xml" />		
 	</files>
 </index>
