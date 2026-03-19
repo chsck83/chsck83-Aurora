@@ -1,0 +1,110 @@
+<element name="Spider Domain" type="Archetype" source="The Internet" id="ID_WOTC_PHB_ARCHETYPE_CLERIC_Spider_DOMAIN">
+		<supports>Divine Domain</supports>
+		<description>
+			<p>The Spider Domain is Lolth's domain for clerics. You must be a female drow who worships Lolth to use this domain's features. </p>
+			<h5 class="caption">Spider DOMAIN SPELLS</h5>
+			<table>
+				<thead>
+					<tr><td>Cleric Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>find familiar (spiders only), dissonant whispers</em></td></tr>
+				<tr><td>3rd</td><td><em>spider climb, web</em></td></tr>
+				<tr><td>5th</td><td><em>slow, summon lesser demons</em></td></tr>
+				<tr><td>7th</td><td><em>giant insect, polymorph</em></td></tr>
+				<tr><td>9th</td><td><em>contagion, insect plague</em></td></tr>
+			</table>
+			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_SPIDER_DOMAIN_BONUS_CANTRIP" />
+			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_SPIDER_DOMAIN_BONUS_PROFICIENCY" />
+			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_SPIDER_DOMAIN_CD_SUMMON_SPIDERS" />
+			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_SPIDER_DOMAIN_PRIESTESS_OF_LOLTH" />
+			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_SPIDER_DOMAIN_HIGH_PRIESTESS_OF_LOLTH" />
+			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_SPIDER_DOMAIN_MATRON_MOTHER" />
+		</description>
+		<sheet display="false">
+			<description>Spiders everywhere</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_FIND_FAMILIAR" level="1" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_DISSONANT_WHISPERS" level="1" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_SPIDER_CLIMB" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_WEB" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_SLOW" level="5" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_SUMMON_LESSER_DEMONS" level="5" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_GIANT_INSECT" level="7" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_POLYMORPH" level="7" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_CONTAGION" level="9" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_INSECT_PLAGUE" level="9" spellcasting="Cleric" prepared="true" />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_SPIDER_DOMAIN_BONUS_CANTRIP" level="1"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_SPIDER_DOMAIN_BONUS_PROFICIENCY" level="1"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_SPIDER_DOMAIN_CD_SUMMON_SPIDERS" level="2"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_SPIDER_DOMAIN_PRIESTESS_OF_LOLTH" level="6"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_SPIDER_DOMAIN_HIGH_PRIESTESS_OF_LOLTH" level="10"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_SPIDER_DOMAIN_MATRON_MOTHER" level="17"/>
+		</rules>
+	</element>
+	<element name="Bonus Cantrip" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_SPIDER_DOMAIN_BONUS_CANTRIP">
+		<description>
+			<p>When you choose this domain at 1st level, you gain the Unholy Flame cantrip if you don’t already know it.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_DMSG_GRGR_SPELL_UNHOLY_FLAME" spellcasting="Cleric" />
+		</rules>
+	</element>
+	<element name="Bonuse Proficiencies" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_SPIDER_DOMAIN_BONUS_PROFICIENCY">
+		<description>
+			<p>At 1st level, you gain proficiency with martial weapons and heavy armor.</p>
+		</description>
+		<sheet display="false">
+			<description>You gain proficiency with martial weapons and heavy armor.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" />
+		</rules>
+	</element>
+	<element name="Channel Divinity: Summon Spiders" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_SPIDER_DOMAIN_CD_SUMMON_SPIDERS">
+		<description>
+			<p>Starting at 2nd level, you can use your Channel Divinity to summon swarms of spiders.</p>
+			<p class="indent">As an action, you present your holy symbol, calling up a swarm of spaiders. The swarm behaves as if conjured by a conjure animals spell but not requiring concentration and lasting for 1 minute. The number of swarms conjured increases to 2 at 5th level, 3 at 11th level and 4 at 17th level.</p>
+		</description>
+		<sheet alt="Summon Spiders" action="Action" usage="Channel Divinity">
+			<description>As an action, you present your holy symbol, calling up a swarm of spaiders. The swarm behaves as if conjured by a conjure animals spell but not requiring concentration and lasting for 1 minute. The number of swarms conjured increases to 2 at 5th level, 3 at 11th level and 4 at 17th level</description>
+		</sheet>
+	</element>
+	<element name="Priestess of Lolth" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_SPIDER_DOMAIN_PRIESTESS_OF_LOLTH">
+		<description>
+			<p>Starting at 6th level, you can use an Action and spend one use of your Channel Divinity to attempt to gain Lolth's favor. Roll 2d6. On a 11 or lower, you can choose one Domain Spell from and cast it without spending spell slots or material components. The spell level can't be higher than one above your maximum spell slot level.</p>
+			<p>If you roll a 12, you conjure a yochlol. The yochlol isn't under your control and behaves according to its own nature, but will attack enemies of lolth, such as elves, if he can see them. The creature disappears after 1 hour.</p>
+			<p>If you have access to Divine Intervention, you can use it as a reaction when you use this channel divinity and choose 12 on the roll of this channel divinity, immediately asserting control over the yochlol.</p>
+		</description>
+		<sheet>
+			<description>
+			<p>Starting at 6th level, you can use an Action and spend one use of your Channel Divinity to attempt to gain Lolth's favor. Roll 2d6. On a 11 or lower, you can choose one Domain Spell from and cast it without spending spell slots or material components. The spell level can't be higher than one above your maximum spell slot level.</p>
+			<p>If you roll a 12, you conjure a yochlol. The yochlol isn't under your control and behaves according to its own nature, but will attack enemies of lolth, such as elves, if he can see them. The creature disappears after 1 hour.</p>
+			<p>If you have access to Divine Intervention, you can use it as a reaction when you use this channel divinity and choose 12 on the roll of this channel divinity, immediately asserting control over the yochlol.</p>
+			</description>
+		</sheet>
+	</element>
+	<element name="High Priestess of Lolth" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_SPIDER_DOMAIN_HIGH_PRIESTESS_OF_LOLTH">
+		<description>
+			<p>Starting at 10th level, when you finish a long rest, you can touch a whip and turn it into a scourge of fangs, a whip made of living snakes. As an Action, you can force a creature within 10 feet to make a Dexterity saving throw (spell save DC) to avoid being bitten. A creature bitten by the whip suffers 1d8 piercing and 2d8 poison damage. Any magical bonuses the whip possesses are added to the DC to avoid the snakes and to the damage dealt.</p>
+			<p>At 14th level, a creature that takes poison damage from the whip is also poisoned until the end of your next turn. </p>
+		</description>
+		<sheet>
+			<description>
+			<p>Starting at 10th level, when you finish a long rest, you can touch a whip and turn it into a scourge of fangs, a whip made of living snakes. As an Action, you can force a creature within 10 feet to make a Dexterity saving throw (spell save DC) to avoid being bitten. A creature bitten by the whip suffers 1d8 piercing and 2d8 poison damage. Any magical bonuses the whip possesses are added to the DC to avoid the snakes and to the damage dealt.</p>
+			<p>At 14th level, a creature that takes poison damage from the whip is also poisoned until the end of your next turn. </p>
+			</description>
+		</sheet>
+	</element>
+	<element name="Matron Mother" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_SPIDER_DOMAIN_MATRON_MOTHER">
+		<description>
+			<p>Starting at 17th level,  you can transmute a drow into a drider through a ritual. As an Action, you can force a drow you touch to make a Charisma saving throw against your spells save DC. If they're restrained, they have disadvantage on that save. If they succeed, they are immune to this for an entire year. If they fail, they become incapacitated as long as you retain concentration. If you concentrate on this ritual for one hour, they turn into a drider and serve you until you die, they die, or you dismiss it. You can't have more than one drider under your command at the same time.</p>
+		</description>
+		<sheet>
+			<description>
+			<p>Starting at 17th level,  you can transmute a drow into a drider through a ritual. As an Action, you can force a drow you touch to make a Charisma saving throw against your spells save DC. If they're restrained, they have disadvantage on that save. If they succeed, they are immune to this for an entire year. If they fail, they become incapacitated as long as you retain concentration. If you concentrate on this ritual for one hour, they turn into a drider and serve you until you die, they die, or you dismiss it. You can't have more than one drider under your command at the same time.</p>
+			</description>
+		</sheet>
+	</element>
