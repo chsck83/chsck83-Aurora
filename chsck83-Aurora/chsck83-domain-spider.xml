@@ -1,3 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Spider Domain</name>
+		<update version="1.0">
+			<file name="chsck83-domain-spider.xml" url="none"/>
+		</update>
+	</info>
+
 <element name="Spider Domain" type="Archetype" source="The Internet" id="ID_WOTC_PHB_ARCHETYPE_CLERIC_Spider_DOMAIN">
 		<supports>Divine Domain</supports>
 		<description>
@@ -108,3 +117,5 @@
 			</description>
 		</sheet>
 	</element>
+
+</elements>
