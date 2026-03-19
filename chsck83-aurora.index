@@ -8,5 +8,6 @@
 	<files>
 		<file name="chsck83-Race-Otterken.xml" url="https://raw.githubusercontent.com/chsck83/chsck83-Aurora/refs/heads/main/chsck83-Aurora/chsck83-Race-Otterken.xml" />
 		<file name="chsck83-items-custom.xml" url="https://raw.githubusercontent.com/chsck83/chsck83-Aurora/refs/heads/main/chsck83-Aurora/chsck83-items-custom.xml" />		
+		<file name="chsck83-domain-spider.xml" url="https://raw.githubusercontent.com/chsck83/chsck83-Aurora/refs/heads/main/chsck83-Aurora/chsck83-domain-spider.xml"/>
 	</files>
 </index>
